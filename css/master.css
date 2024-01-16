@@ -1,0 +1,184 @@
+header {
+  background-color: #003333;
+  background-image: url(../imgs/Logo_100.png);
+  background-repeat: no-repeat;
+  color: #fff;
+  padding: 0.37% 0%;
+  text-align: center;
+  top: 0;
+  width: 100%;
+}
+
+nav {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 0.74% 0%;
+  z-index: 100;
+}
+nav a {
+  color: #fff;
+  text-decoration: none;
+  padding: 0% 0.74%;
+}
+
+aside {
+  float: left;
+  width: 25%;
+  background-color: #f4f4f4;
+  padding: 0;
+  margin: 1.48%;
+  border: 2px solid #333;
+  height: calc(130vh - 10px);
+  overflow-y: scroll;
+}
+
+aside h2 {
+  position: sticky;
+  color: #fff;
+  padding: 0%;
+  top: 0;
+  width: 100%;
+  background-color: #003333;
+}
+aside p {
+  padding: 1.48%;
+}
+section {
+  padding: 0% 0.74%;
+  margin: 1.48%;
+  background-color: #fff;
+}
+.intro,
+.college {
+  width: 68%;
+}
+
+.college img {
+  margin: 0.74%;
+  border: 2px solid black;
+  border-radius: 10%;
+  width: 267px;
+}
+
+h1 {
+  text-align: center;
+}
+.contact-info {
+  margin-bottom: 1.48%;
+  width: 50%;
+}
+.address-info {
+  width: 30%;
+}
+.contact-details {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 1.48%;
+}
+form {
+  width: 60%;
+  margin: 0 auto;
+}
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 0.6%;
+  margin-bottom: 0.74%;
+}
+select {
+  width: 50%;
+  padding: 0.6%;
+  margin-bottom: 0.74%;
+}
+input[type="submit"],
+input[type="reset"] {
+  padding: 0.74%;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+caption {
+  font-size: 20px;
+}
+.map-container {
+  width: 100%;
+  height: 400px;
+  margin-bottom: 1.48%;
+}
+
+.video-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 -10px; /* للتعامل مع الهوامش */
+}
+
+.video-wrapper {
+  width: calc(
+    50% - 20px
+  ); /* عرض الفيديو يأخذ نصف العرض مع هوامش -10px من الجهتين */
+  padding-bottom: 56.25%; /* نسبة العرض إلى الارتفاع (9/16 = 0.5625 أو 56.25%) */
+  position: relative;
+  margin: 10px 10px; /* الهوامش */
+}
+
+.video-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.map {
+  width: 100%;
+  height: 80%;
+  border: none;
+}
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.4;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+thead {
+  background-color: #003333;
+  color: #fff;
+}
+.colTable {
+  background-color: #eee;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 0.74% 0%;
+  bottom: 0;
+  width: 100%;
+  height: 40px;
+}
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+  aside {
+    width: 100%;
+    margin: 1.48% 0%;
+    height: auto;
+  }
+  .intro,
+  .college {
+    width: 97%;
+  }
+}
