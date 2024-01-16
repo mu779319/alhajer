@@ -117,16 +117,14 @@ caption {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin: 0 -10px; /* للتعامل مع الهوامش */
+  margin: 0 -10px;
 }
 
 .video-wrapper {
-  width: calc(
-    50% - 20px
-  ); /* عرض الفيديو يأخذ نصف العرض مع هوامش -10px من الجهتين */
-  padding-bottom: 56.25%; /* نسبة العرض إلى الارتفاع (9/16 = 0.5625 أو 56.25%) */
+  width: calc(50% - 20px);
+  padding-bottom: 56.25%;
   position: relative;
-  margin: 10px 10px; /* الهوامش */
+  margin: 10px 10px;
 }
 
 .video-wrapper iframe {
@@ -150,6 +148,7 @@ body {
   padding: 0;
   background-color: #f4f4f4;
   color: #333;
+  overflow-y: scroll;
 }
 
 thead {
@@ -175,10 +174,14 @@ footer {
   aside {
     width: 100%;
     margin: 1.48% 0%;
-    height: auto;
+    height: 471px;
+    overflow-y: scroll;
   }
   .intro,
   .college {
     width: 97%;
+  }
+  .video-wrapper {
+    width: calc(100% - 20px);
   }
 }
