@@ -57,26 +57,28 @@
 
     <section dir="rtl">
       <form action="submit.php" method="post">
-        <h2>إرسال رسالة:</h2>
-        <select name="messageType">
-          <option value="general" selected>عام</option>
-          <option value="complaint">شكوى</option>
-          <option value="report">تقرير</option>
-          <option value="inquiry">استعلام</option></select
-        ><br />
-        <input type="text" name="name" placeholder="الاسم" required /><br />
-        <input
-          type="email"
-          name="email"
-          placeholder="البريد الإلكتروني"
-          required
-        /><br />
-        <textarea name="message" placeholder="الرسالة" rows="5"></textarea
-        ><br />
-        <input type="file" />
-        <br />
-        <input type="submit" value="إرسال" />
-        <input type="reset" value="تراجع" />
+        <fieldset>
+          <legend>إرسال رسالة:</legend>
+          <select name="messageType">
+            <option value="general" selected>عام</option>
+            <option value="complaint">شكوى</option>
+            <option value="report">تقرير</option>
+            <option value="inquiry">استعلام</option></select
+          ><br />
+          <input type="text" name="name" placeholder="الاسم" required /><br />
+          <input
+            type="email"
+            name="email"
+            placeholder="البريد الإلكتروني"
+            required
+          /><br />
+          <textarea name="message" placeholder="الرسالة" rows="5"></textarea
+          ><br />
+          <input type="file" />
+          <br />
+          <input type="submit" value="إرسال" />
+          <input type="reset" value="تراجع" />
+        </fieldset>
       </form>
     </section>
 
