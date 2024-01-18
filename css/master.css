@@ -172,10 +172,11 @@ footer {
 /* Media Queries */
 @media screen and (max-width: 768px) {
   aside {
-    width: 100%;
+    width: 92%;
     margin: 1.48% 0%;
     height: 300px;
     overflow-y: scroll;
+    margin-left: 3.5%;
   }
   form {
     width: 60%;
