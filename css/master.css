@@ -59,12 +59,34 @@ section {
 .college {
   width: 68%;
 }
-
 .college img {
-  margin: 0.74%;
+  margin: 2.74%;
+
   border: 2px solid black;
   border-radius: 10%;
   width: 267px;
+}
+
+.sec1 {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.part1 {
+  flex: 1;
+  margin: 0.74%;
+  border: 2px solid #d1d1d1;
+  background-color: #f6f6f6;
+  border-radius: 2%;
+  height: 370px;
+}
+
+.college h3 {
+  margin: 0 1%;
+}
+.college p {
+  margin: 0 1%;
+  font-size: 14px;
 }
 
 h1 {
@@ -87,6 +109,7 @@ fieldset {
   width: 60%;
   margin: 0 auto;
 }
+
 input[type="text"],
 input[type="email"],
 textarea {
@@ -180,9 +203,18 @@ footer {
     height: 300px;
     overflow-y: scroll;
   }
+
   .intro,
   .college {
     width: 97%;
+  }
+  .sec1 {
+    flex-direction: column;
+  }
+
+  .part1 {
+    flex: 100%;
+    margin: 2.74% 5%;
   }
   .video-wrapper {
     width: calc(100% - 20px);
