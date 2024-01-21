@@ -32,7 +32,7 @@ aside {
   padding: 0;
   margin: 1.48%;
   border: 2px solid #333;
-  height: calc(130vh - 10px);
+  height: calc(155vh - 10px);
   overflow-y: scroll;
 }
 
@@ -78,6 +78,7 @@ section {
   border: 2px solid #d1d1d1;
   background-color: #f6f6f6;
   border-radius: 2%;
+  width: 290px;
   height: 370px;
 }
 
@@ -214,7 +215,7 @@ footer {
 
   .part1 {
     flex: 100%;
-    margin: 2.74% 5%;
+    margin: 2.74% auto;
   }
   .video-wrapper {
     width: calc(100% - 20px);
