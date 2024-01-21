@@ -60,8 +60,7 @@ section {
   width: 68%;
 }
 .college img {
-  margin: 2.74%;
-
+  margin: 1% auto;
   border: 2px solid black;
   border-radius: 10%;
   width: 267px;
@@ -83,10 +82,10 @@ section {
 }
 
 .college h3 {
-  margin: 0 1%;
+  margin: 0 3%;
 }
 .college p {
-  margin: 0 1%;
+  margin: 0 3%;
   font-size: 14px;
 }
 
