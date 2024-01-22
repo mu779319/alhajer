@@ -1,14 +1,27 @@
 header {
   background-color: #003333;
-  background-image: url(../imgs/Logo_100.png);
-  background-repeat: no-repeat;
   color: #fff;
   padding: 0.37% 0%;
   text-align: center;
   top: 0;
   width: 100%;
+  display: flex;
+}
+header a {
+  position: relative;
+  left: 0;
 }
 
+header span {
+  position: relative;
+  direction: rtl;
+  text-align: center;
+  margin: 0 auto;
+}
+.rightlogo {
+  position: relative;
+  left: 100%;
+}
 nav {
   position: sticky;
   top: 0;
@@ -59,12 +72,12 @@ section {
 .college {
   width: 68%;
 }
-.college img {
+/* .college img {
   margin: 1% auto;
   border: 2px solid black;
   border-radius: 10%;
   width: 267px;
-}
+} */
 
 .sec1 {
   display: flex;
@@ -72,13 +85,21 @@ section {
 }
 
 .part1 {
-  flex: 1;
-  margin: 0.74%;
+  /* flex: 1; */
+  margin: 0.74% auto;
   border: 2px solid #d1d1d1;
   background-color: #f6f6f6;
-  border-radius: 2%;
-  width: 290px;
-  height: 370px;
+  border-radius: 4%;
+  max-width: 275px;
+  /* width: 290px; */
+  min-height: 370px;
+  /* height: 370px; */
+}
+
+.part1 img {
+  border-top-right-radius: 9px;
+  border-top-left-radius: 9px;
+  width: 100%;
 }
 
 .college h3 {
