@@ -7,10 +7,11 @@ header {
   width: 100%;
   display: flex;
 }
+/* 
 header a {
   position: relative;
   left: 0;
-}
+} */
 
 header span {
   position: relative;
@@ -19,8 +20,7 @@ header span {
   margin: 0 auto;
 }
 .rightlogo {
-  position: relative;
-  left: 100%;
+  visibility: hidden;
 }
 nav {
   position: sticky;
