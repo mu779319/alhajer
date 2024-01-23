@@ -225,6 +225,29 @@ footer {
     overflow-y: scroll;
   }
 
+  header span {
+    text-align: center;
+    margin-right: 2%;
+  }
+
+  header p {
+    margin-top: 2%;
+    margin-bottom: 2%;
+  }
+  header h1 {
+    margin-top: 4%;
+    margin-bottom: 4%;
+  }
+
+  header img {
+    width: 80px;
+  }
+  
+
+  .rightlogo {
+    display: none;
+  }
+  
   .intro,
   .college {
     width: 97%;
