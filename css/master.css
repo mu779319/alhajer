@@ -38,9 +38,21 @@ header span {
   border-radius: 10%;
   direction: rtl;
   text-align: center;
-  background-color: #00ff001e;
+  background-color: #f2fff282;
   margin: 1% auto;
 }
+
+@font-face {
+  font-family: "Droid-Arabic-Kufi-Regular";
+  src: url("../font/Droid-Arabic-Kufi-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.body-of-about-page {
+  font-family: "Droid-Arabic-Kufi-Regular", Arial, sans-serif;
+}
+
 
 .section2 {
   flex-wrap: wrap;
