@@ -52,8 +52,10 @@ header span {
 .body-of-about-page {
   font-family: "Droid-Arabic-Kufi-Regular", Arial, sans-serif;
 }
-
-
+.body-of-about-page p {
+  text-align: justify;
+  padding: 2% 4%;
+}
 .section2 {
   flex-wrap: wrap;
   direction: rtl;
