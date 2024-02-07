@@ -42,20 +42,11 @@ header span {
   margin: 1% auto;
 }
 
-@font-face {
-  font-family: "Droid-Arabic-Kufi-Regular";
-  src: url("../font/Droid-Arabic-Kufi-Regular.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-}
-
-.body-of-about-page {
-  font-family: "Droid-Arabic-Kufi-Regular", Arial, sans-serif;
-}
-.body-of-about-page p {
+.body-of-about-page section p {
   text-align: justify;
   padding: 2% 4%;
 }
+
 .section2 {
   flex-wrap: wrap;
   direction: rtl;
@@ -72,6 +63,18 @@ nav {
   padding: 1% 0%;
   z-index: 100;
 }
+
+nav ul {
+  list-style: none;
+  display: inline;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  display: inline;
+}
+
 nav a {
   color: #fff;
   text-decoration: none;
@@ -89,13 +92,45 @@ aside {
   overflow-y: scroll;
 }
 
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  25% {
+    background-position: 25% 50%;
+  }
+
+  50% {
+    background-position: 50% 50%;
+  }
+  75% {
+    background-position: 75% 50%;
+  }
+  100% {
+    background-position: 100% 100%;
+  }
+}
+
 aside h2 {
   position: sticky;
   color: #fff;
   padding: 0%;
   top: 0;
   width: 100%;
-  background-color: #003333;
+  background-image: linear-gradient(
+    to left,
+    #c5f6f6,
+    #003333,
+    #c5f6f6,
+    #003333,
+    #c5f6f6,
+    #003333,
+    #c5f6f6,
+    #003333,
+    #c5f6f6
+  );
+  background-size: 500% 100%;
+  animation: gradientAnimation 10s linear infinite;
   text-align: center;
   z-index: 2;
 }
@@ -111,6 +146,7 @@ section {
 .intro,
 .college {
   width: 68%;
+  text-align: justify;
 }
 /* .college img {
   margin: 1% auto;
@@ -122,12 +158,18 @@ section {
 .sec1 {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: center;
+  gap: 20px;
+}
+.sec1 a {
+  color: black;
+  text-decoration: none;
 }
 
 .part1 {
-  /* flex: 1; */
-  margin: 0.74% auto;
-  border: 2px solid #d1d1d1;
+  /* margin-bottom: 1.74%; */
+  border: 3.5px solid #eee;
   background-color: #f6f6f6;
   border-radius: 4%;
   max-width: 275px;
@@ -136,23 +178,37 @@ section {
   /* height: 370px; */
 }
 
+.div-inside {
+  /* height: calc(100% - 280px); */
+  background-size: 500% 200%;
+  height: calc(376px - 286px);
+  border-bottom-right-radius: 9px;
+  border-bottom-left-radius: 9px;
+}
+.part1:hover {
+  border-color: #ccc;
+  transform: scale(1.02);
+  transition: all 0.3s ease-in-out;
+}
+::selection {
+  background-color: turquoise;
+  color: white;
+}
 .part1 img {
   border-top-right-radius: 9px;
   border-top-left-radius: 9px;
   width: 100%;
 }
 
+.college p,
 .college h3 {
   margin: 0 3%;
-}
-.college p {
-  margin: 0 3%;
-  font-size: 14px;
 }
 
 h1 {
   text-align: center;
 }
+
 .contact-info {
   margin-bottom: 1.48%;
   width: 50%;
@@ -227,8 +283,14 @@ caption {
   height: 70%;
   border: none;
 }
+@font-face {
+  font-family: "Cairo-Medium";
+  src: url("../font/Cairo/static/Cairo-Medium.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
 body {
-  font-family: Arial, sans-serif;
+  font-family: "Cairo-Medium", Arial, sans-serif;
   line-height: 1.4;
   font-size: 16px;
   margin: 0;
@@ -236,6 +298,15 @@ body {
   background-color: #f4f4f4;
   color: #333;
   overflow-y: scroll;
+}
+
+header,
+nav,
+aside,
+h2,
+h3,
+.part1 p {
+  font-family: Arial, sans-serif;
 }
 
 thead {
@@ -251,12 +322,16 @@ footer {
   color: #fff;
   text-align: center;
   padding: 0.74% 0%;
+  top: 0;
   bottom: 0;
   width: 100%;
   height: 40px;
 }
+footer p {
+  padding-top: 6px;
+  margin: 0;
+}
 
-/* Media Queries */
 @media screen and (max-width: 768px) {
   aside {
     width: 89%;
@@ -293,11 +368,6 @@ footer {
   }
   .sec1 {
     flex-direction: column;
-  }
-
-  .part1 {
-    flex: 100%;
-    margin: 2.74% auto;
   }
 
   .coniner-div {
